@@ -83,7 +83,6 @@ final class SeverityTest extends TestCase
             // Info
             [\E_NOTICE, 'info'],
             [\E_USER_NOTICE, 'info'],
-            [\E_STRICT, 'info'],
         ];
     }
 }
