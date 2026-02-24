@@ -65,7 +65,7 @@ final class ClientBuilder implements ClientBuilderInterface
      *
      * @param Options|null $options The client options
      */
-    public function __construct(Options $options = null)
+    public function __construct(?Options $options = null)
     {
         $this->options = $options ?? new Options();
     }

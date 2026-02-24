@@ -200,7 +200,7 @@ final class Event
      *
      * @param EventId|null $eventId The ID of the event
      */
-    public static function createTransaction(EventId $eventId = null): self
+    public static function createTransaction(?EventId $eventId = null): self
     {
         return new self($eventId, EventType::transaction());
     }
