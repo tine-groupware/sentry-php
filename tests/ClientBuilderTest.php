@@ -94,13 +94,7 @@ final class ClientBuilderTest extends TestCase
 
     private function getTransport(Client $client): TransportInterface
     {
-        $property = new \ReflectionProperty(Client::class, 'transport');
-
-        $property->setAccessible(true);
-        $value = $property->getValue($client);
-        $property->setAccessible(false);
-
-        return $value;
+        return (new \ReflectionProperty(Client::class, 'transport'))->getValue($client);
     }
 }
 
